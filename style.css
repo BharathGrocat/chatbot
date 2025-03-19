@@ -1,0 +1,115 @@
+section.quick_bot {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 9rem;
+    margin-top: 3rem;
+}
+
+.query-main {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    background: #fff;
+}
+
+.query-main .form-group {
+    margin-bottom: 0;
+    width: 50%;
+    display: flex;
+    border: 1px solid;
+    padding: 8px;
+    gap: 10px;
+    margin-right: 2px;
+}
+
+.query-main .form-group input {
+    border: 0;
+}
+
+.quick_bot .respons_btn {
+    display: flex;
+    gap: 10px;
+}
+
+.quick_bot .respons_btn button {
+    background: transparent;
+    border: 0;
+}
+
+#response {
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 50px;
+}
+
+#response h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+#response strong {
+    color: #d9534f;
+}
+
+#response ul {
+    padding-left: 20px;
+}
+
+#response li {
+    margin-bottom: 5px;
+}
+
+/* Style for code blocks */
+pre {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    position: relative;
+    /* Required for positioning the copy button */
+}
+
+/* Style for the copy button */
+.copy-code-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-code-button:hover {
+    background-color: #0056b3;
+}
+
+section.quick_bot span#questionText {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+
+    .query-main .form-group {
+        margin-bottom: 0;
+        width: 85%;
+        display: flex;
+        border: 1px solid;
+        padding: 8px;
+        gap: 10px;
+        margin-right: 2px;
+        padding: 0;
+    }
+}

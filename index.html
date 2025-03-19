@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WSP ChatBot</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="quick_bot">
+        <div class="container">
+            <h2>Free ChatBot</h2>
+            <!-- Display the question at the top -->
+            <div id="questionDisplay" class="question-display mt-3" style="display: none;">
+                <span id="questionText"></span>
+            </div>
+            <!--  -->
+            <div id="response" class="response-container"></div>
+            <!--  -->
+            <div class="respons_btn">
+                <button class="readybtn" onclick="retryQuestion()" id="retryButton" style="display: none;"><i
+                        class="fa-solid fa-rotate"></i></button>
+                <button class="rewritebtn" onclick="rewriteQuestion()" id="rewriteButton" style="display: none;"><i
+                        class="fa-solid fa-pen"></i></button>
+            </div>
+            <!--  -->
+            <div class="query-main">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="userInput" placeholder="Enter your question"
+                        onkeydown="handleKeyDown(event)" />
+                    <button class="btn btn-success" onclick="sendMessage()" id="askButton"><i
+                            class="fa-solid fa-arrow-up"></i></button>
+                </div>
+                <!--  -->
+                <button class="btn btn-danger" onclick="stopRequest()" id="stopButton" style="display: none;"
+                    disabled><i class="fa-solid fa-stop"></i></button>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
